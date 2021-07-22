@@ -191,12 +191,15 @@
         max-height: max-content;
         width: 100%;
         height: 100%;
+        display: flex;
     }
 
     .navbar-link:focus,
     .navbar-link:hover {
         background-color: transparent;
-        border-bottom: 3px solid var(--primary-green);
+        border-bottom: 3px solid black;
         padding-bottom: 16px 14px;
     }
-}
+    #navbar {
+        height: 60px;
+    }
