@@ -165,3 +165,38 @@
     opacity: 1;
     visibility: visible;
 }
+
+@media screen and (min-width: 1440px) {
+    .navbar-toggle {
+        display: none;
+    }
+
+    #navbar .navbar-menu,
+    #navbar.opened .navbar-menu {
+        visibility: visible;
+        opacity: 1;
+        position: static;
+        display: block;
+        height: 100%;
+    }
+
+    #navbar .navbar-links,
+    #navbar.opened .navbar-links {
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        position: static;
+        flex-direction: row;
+        list-style-type: none;
+        max-height: max-content;
+        width: 100%;
+        height: 100%;
+    }
+
+    .navbar-link:focus,
+    .navbar-link:hover {
+        background-color: transparent;
+        border-bottom: 3px solid var(--primary-green);
+        padding-bottom: 16px 14px;
+    }
+}
